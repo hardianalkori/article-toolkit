@@ -10,7 +10,7 @@ st.set_page_config(
 
 st.title("Rangkum Artikel")
 
-sw = pd.read_excel("sw.xlsx",header = None).values[:,0].tolist()
+sw = pd.read_excel("stopwords.xlsx",header = None).values[:,0].tolist()
 
 stop = StopWordRemoverFactory().get_stop_words()
 data = stop + sw
